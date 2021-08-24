@@ -25,7 +25,7 @@ jobs:
       - name: package module
         if: github.event.pull_request.merged == true
         run: python setup.py sdist
-      - name: deploy to pypi
+      - name: deployment to pypi
         if: github.event.pull_request.merged == true
         env:
           TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}

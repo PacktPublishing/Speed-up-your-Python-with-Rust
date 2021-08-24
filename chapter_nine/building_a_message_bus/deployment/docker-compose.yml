@@ -1,0 +1,57 @@
+services:
+
+    flask_app:
+        container_name: fib-calculator
+        image: "flask-fib:latest"
+        restart: always
+        ports:
+          - "5002:5002"
+        expose:
+            - 5002
+        depends_on:
+          - postgres
+        links:
+          - postgres
+
+    nginx:
+        container_name: 'nginx'
+        image: "nginx:1.13.5"
+        ports:
+            - "80:80"
+        links:
+            - flask_app
+        depends_on:
+            - flask_app
+        volumes:
+            - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+
+    postgres:
+        container_name: 'fib-live-postgres'
+        image: 'postgres:11.2'
+        restart: always
+        ports:
+            - '5432:5432'
+        environment:
+            - 'POSTGRES_USER=user'
+            - 'POSTGRES_DB=fib'
+            - 'POSTGRES_PASSWORD=password'
+    main_cache:
+        container_name: 'main-live-redis'
+        image: 'redis:5.0.3'
+        ports:
+            - '6379:6379'
+
+        queue_worker:
+            container_name: fib-worker
+            image: "flask-fib:latest"
+            restart: always
+            entrypoint: "celery -A app.celery worker -l info"
+            ports:
+                - "5003:5003"
+            expose:
+                - 5003
+            depends_on:
+                - main_cache
+            links:
+                - main_cache
+

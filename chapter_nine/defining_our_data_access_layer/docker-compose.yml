@@ -1,0 +1,12 @@
+version: "3.7"
+
+    postgres:
+      container_name: 'fib-dev-postgres'
+      image: 'postgres:11.2'
+      restart: always
+      ports:
+        - '5432:5432'
+      environment:
+        - 'POSTGRES_USER=user'
+        - 'POSTGRES_DB=fib'
+        - 'POSTGRES_PASSWORD=password'

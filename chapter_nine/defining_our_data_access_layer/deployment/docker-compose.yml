@@ -1,0 +1,37 @@
+services:
+
+    flask_app:
+        container_name: fib-calculator
+        image: "flask-fib:latest"
+        restart: always
+        ports:
+          - "5002:5002"
+        expose:
+            - 5002
+        depends_on:
+          - postgres
+        links:
+          - postgres
+
+    nginx:
+        container_name: 'nginx'
+        image: "nginx:1.13.5"
+        ports:
+            - "80:80"
+        links:
+            - flask_app
+        depends_on:
+            - flask_app
+        volumes:
+            - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+
+    postgres:
+        container_name: 'fib-live-postgres'
+        image: 'postgres:11.2'
+        restart: always
+        ports:
+            - '5432:5432'
+        environment:
+            - 'POSTGRES_USER=user'
+            - 'POSTGRES_DB=fib'
+            - 'POSTGRES_PASSWORD=password'

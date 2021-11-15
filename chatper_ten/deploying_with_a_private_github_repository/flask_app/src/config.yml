@@ -1,0 +1,3 @@
+DB_URL: "postgresql://user:password@localhost:5432/fib"
+QUEUE_BACKEND: "redis://localhost:6379/0"
+QUEUE_BROKER: "redis://localhost:6379/0"

@@ -1,0 +1,17 @@
+[package]
+name = "rust_db_cloning"
+version = "0.1.0"
+authors = ["maxwellflitton"]
+edition = "2018"
+
+[dependencies]
+diesel = { version = "1.4.4", features = ["postgres"] }
+dotenv = "0.15.0"
+
+[lib]
+name = "rust_db_cloning"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.13.2"
+features = ["extension-module"]

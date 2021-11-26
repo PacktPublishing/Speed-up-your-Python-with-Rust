@@ -5,6 +5,8 @@ importlib-metadata==4.6.4
 itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
+PyYAML==6.0
+pyyml==0.0.2
 typing-extensions==3.10.0.0
 Werkzeug==2.0.1
 zipp==3.5.0

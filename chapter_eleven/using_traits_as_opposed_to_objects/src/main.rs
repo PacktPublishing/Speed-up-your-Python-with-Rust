@@ -21,7 +21,8 @@ fn main() {
             Box::new(Patient{name: String::from("war")}),
             Box::new(Patient{name: String::from("famine")}),
             Box::new(Patient{name: String::from("death")})
-
+        ]
+    }
     for i in patient_list.patients {
         admit_patient(&i, &nurse);
         diagnose_patient(&i, &doctor);
@@ -29,5 +30,4 @@ fn main() {
         administer_meds(&i, &nurse_two);
         discharge_patient(&i, &nurse);
     }
-
 }

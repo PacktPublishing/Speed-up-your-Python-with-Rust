@@ -22,3 +22,6 @@ class Particle(metaclass=FlyWeight):
     @property
     def times(self):
         return list(self.co_dict.keys())
+
+
+

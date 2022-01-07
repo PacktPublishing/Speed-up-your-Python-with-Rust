@@ -58,7 +58,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ### Related products
 * Python for Geeks  [[Packt]](https://www.packtpub.com/product/python-for-geeks/9781801070119?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1801070113)
 
-* Rust Web Programming  [[Packt]](https://www.packtpub.com/product/rust-web-programming/9781800560819?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/B08PDFR2M9)
+* Rust Web Programming  [[Packt]](https://www.packtpub.com/product/rust-web-programming/9781800560819?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1800560818)
 
 
 

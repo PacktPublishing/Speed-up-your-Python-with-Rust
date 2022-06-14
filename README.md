@@ -1,7 +1,3 @@
-## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/B17720?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
------
-For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
-
 # Speed Up Your Python with Rust 
 
 <a href="https://www.packtpub.com/product/speed-up-your-python-with-rust/9781801811446?utm_source=github&utm_medium=repository&utm_campaign="><img src="https://static.packt-cdn.com/products/9781801811446/cover/smaller" alt="Speed Up Your Python with Rust " height="256px" align="right"></a>

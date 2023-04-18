@@ -1,3 +1,6 @@
+
+
+
 # Speed Up Your Python with Rust 
 
 <a href="https://www.packtpub.com/product/speed-up-your-python-with-rust/9781801811446?utm_source=github&utm_medium=repository&utm_campaign="><img src="https://static.packt-cdn.com/products/9781801811446/cover/smaller" alt="Speed Up Your Python with Rust " height="256px" align="right"></a>
@@ -73,3 +76,7 @@ is a software engineer who works for the open source financial loss modeling fou
 
 
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781801811446">https://packt.link/free-ebook/9781801811446 </a> </p>
